@@ -1,0 +1,7 @@
+Sunrise.Keystore
+
+ -Pass: Sunrise2193
+
+alias childrengames
+
+ -Pass: Sunrise93

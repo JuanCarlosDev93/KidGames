@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "179682955404",
+    "firebase_url": "https://apps-infantiles.firebaseio.com",
+    "project_id": "apps-infantiles",
+    "storage_bucket": "apps-infantiles.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:179682955404:android:ba333213cc609df9572ba9",
+        "android_client_info": {
+          "package_name": "com.littlesunrise.basicgames"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "179682955404-od882cm3hjekag8pugiuuknkftpp0t5k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDeHL7OCl_cIWZmqBrjsH3GYxbOtSb825o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "179682955404-od882cm3hjekag8pugiuuknkftpp0t5k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

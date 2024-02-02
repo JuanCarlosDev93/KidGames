@@ -1,0 +1,1064 @@
+fileFormatVersion: 2
+guid: 41e8dcd03b4ada74386147df41bd1280
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 47
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BearHead
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 908
+        width: 193
+        height: 152
+      alignment: 9
+      pivot: {x: 0.39707872, y: 0.52840906}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b6096f3073ab8d4fb2dd18dd1977b1b
+      internalID: -1677417385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BearBody
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 849
+        width: 235
+        height: 221
+      alignment: 9
+      pivot: {x: 0.48529962, y: 0.95722294}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 33.5, y: 110.5}
+        - {x: -53.5, y: 110.5}
+        - {x: -117.5, y: 52.5}
+        - {x: -117.5, y: -69.5}
+        - {x: -57.5, y: -110.5}
+        - {x: 31.5, y: -110.5}
+        - {x: 65.5, y: -105.5}
+        - {x: 117.5, y: -62.5}
+        - {x: 117.5, y: 82.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9440ddc6dff978d4fb99ec968e329d55
+      internalID: -441105213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BearTail
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 984
+        width: 67
+        height: 66
+      alignment: 9
+      pivot: {x: 0.7056294, y: 0.35605875}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd683cb1f532ef54799ddb8eccaf1993
+      internalID: 1609694377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BunnyHead
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 916
+        width: 161
+        height: 144
+      alignment: 9
+      pivot: {x: 0.49435785, y: 0.69871396}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -59.5, y: 72}
+        - {x: -80.5, y: 49}
+        - {x: -80.5, y: -44}
+        - {x: -35.5, y: -72}
+        - {x: 73.5, y: -72}
+        - {x: 80.5, y: -49}
+        - {x: 80.5, y: 63}
+        - {x: 47.5, y: 72}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 715c8776bf8c3134e980be51779081ac
+      internalID: 84346177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BunnyEarL
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 960
+        width: 79
+        height: 96
+      alignment: 9
+      pivot: {x: 0.7989695, y: 0.6230138}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdb28b869c74d7b469aedef0d400e07c
+      internalID: 1777744774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BunnyEarR
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 956
+        width: 72
+        height: 100
+      alignment: 9
+      pivot: {x: 0.24766625, y: 0.57721496}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a336f8b7d0a17a4ba47797c433fdab2
+      internalID: 587228436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShapesIcons
+      rect:
+        serializedVersion: 2
+        x: 1323
+        y: 959
+        width: 286
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de80551e14da63246ace90ba25738775
+      internalID: -1259821212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NumberIcons
+      rect:
+        serializedVersion: 2
+        x: 1631
+        y: 928
+        width: 273
+        height: 143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0edc5d6d250e68468c2a810b7876879
+      internalID: -249143433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ColorIcons
+      rect:
+        serializedVersion: 2
+        x: 998
+        y: 896
+        width: 291
+        height: 158
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37c13f15ec1d3a0428fefd439ae0eb4f
+      internalID: 1500072242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BunnyBody
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 704
+        width: 179
+        height: 227
+      alignment: 9
+      pivot: {x: 0.46447617, y: 0.8461546}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -77.5, y: 113.5}
+        - {x: -89.5, y: 69.5}
+        - {x: -89.5, y: -113.5}
+        - {x: 89.5, y: -113.5}
+        - {x: 89.5, y: 70.5}
+        - {x: 50.5, y: 113.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d253ab1d36b416e4fa502885ef020696
+      internalID: 431609303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BunnyTail
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 863
+        width: 85
+        height: 85
+      alignment: 9
+      pivot: {x: 0.3290068, y: 0.25954014}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b4f1d5a16dc1e24ab7f8cb832822873
+      internalID: 1357179120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BearPawBL
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 771
+        width: 65
+        height: 119
+      alignment: 9
+      pivot: {x: 0.44685268, y: 0.82658786}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee83d6cc01c4d8a4db74849445838c1c
+      internalID: 216209795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BearPawFL
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 766
+        width: 67
+        height: 119
+      alignment: 9
+      pivot: {x: 0.5515606, y: 0.855618}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 057b578a8f9de2e49be7bfbd7e20c0be
+      internalID: -2120211238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BearPawFR
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 764
+        width: 57
+        height: 122
+      alignment: 9
+      pivot: {x: 0.48484802, y: 0.86103094}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d36917ddfb2433a4ba992328a69889f9
+      internalID: -534603413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BunnyPawBR
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 802
+        width: 91
+        height: 95
+      alignment: 9
+      pivot: {x: 0.18555224, y: 0.829895}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f00c98aa096eac64895fdccb9dc814b1
+      internalID: -302120774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BunnyPawFL
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 674
+        width: 61
+        height: 136
+      alignment: 9
+      pivot: {x: 0.47021684, y: 0.8606904}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb43f7548c36f1147a1fedae8d66e807
+      internalID: 1818941024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BunnyPawFR
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 690
+        width: 50
+        height: 120
+      alignment: 9
+      pivot: {x: 0.41824463, y: 0.84065247}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0120fea894bbcb7439d9553783182b09
+      internalID: 1508130790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HandClosed
+      rect:
+        serializedVersion: 2
+        x: 1156
+        y: 48
+        width: 291
+        height: 842
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -145.5, y: 421}
+        - {x: -145.5, y: -343}
+        - {x: -113.5, y: -421}
+        - {x: 22.5, y: -421}
+        - {x: 35.5, y: -228}
+        - {x: 44.5, y: -202}
+        - {x: 145.5, y: 133}
+        - {x: 145.5, y: 406}
+        - {x: 116.5, y: 421}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baae246c3a4b8f545a58b777fe77bd14
+      internalID: -1614920694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HandOpen
+      rect:
+        serializedVersion: 2
+        x: 1467
+        y: 48
+        width: 440
+        height: 853
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -220, y: 426.5}
+        - {x: -220, y: 13.5}
+        - {x: -113, y: -212.5}
+        - {x: -107, y: -260.5}
+        - {x: -100, y: -384.5}
+        - {x: -74, y: -426.5}
+        - {x: 220, y: -426.5}
+        - {x: 220, y: 426.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 115beb9097efede47907af277d8c092c
+      internalID: -572696784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DuckHead
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 523
+        width: 160
+        height: 213
+      alignment: 9
+      pivot: {x: 0.55144656, y: 0.74171495}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25804096c94524248bb2dfb8bc579a62
+      internalID: 1047647237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DuckBody
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 532
+        width: 204
+        height: 211
+      alignment: 9
+      pivot: {x: 0.39779213, y: 0.7927914}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f6a4802cb6b15a47a84b14ba5793e85
+      internalID: 1179786627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BunnyPawBL
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 675
+        width: 92
+        height: 108
+      alignment: 9
+      pivot: {x: 0.8307787, y: 0.84065247}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a370db1b1f4a9074ab4992402007b440
+      internalID: 1417518331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DuckTail
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 390
+        width: 96
+        height: 104
+      alignment: 9
+      pivot: {x: 0.28280845, y: 0.26238838}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17a7773b194edcf428fd2d70a545c756
+      internalID: -83742596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DuckWing
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 379
+        width: 101
+        height: 133
+      alignment: 9
+      pivot: {x: 0.27826834, y: 0.19807239}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaec9f1ef3de38342a68efa36ead6c21
+      internalID: -2088829203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DuckPaw
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 369
+        width: 95
+        height: 142
+      alignment: 9
+      pivot: {x: 0.13420346, y: 0.89155686}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e44c54eec2daf2041ac57130a014de25
+      internalID: -771932771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cartel
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 370
+        width: 359
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfc287933cf08d24999955ee5d4d5489
+      internalID: 1971887258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CartelRope
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 384
+        width: 119
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.8786978}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c73366e97f969c04b8e75a5568de2454
+      internalID: -763923102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rope
+      rect:
+        serializedVersion: 2
+        x: 1064
+        y: 77
+        width: 33
+        height: 519
+      alignment: 9
+      pivot: {x: 0.44535318, y: 0.9621235}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 476b462b01799d44989442bdd6f37f23
+      internalID: -1520213020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkeyHead
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 183
+        width: 211
+        height: 169
+      alignment: 9
+      pivot: {x: 0.51097965, y: 0.308083}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f5eed40252f715419dc304f88dfd650
+      internalID: 524494294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkeyArmL
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 237
+        width: 54
+        height: 107
+      alignment: 9
+      pivot: {x: 0.45709795, y: 0.80312115}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa9bacd80cb925145b8ee418bcac8a86
+      internalID: 1462333697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkeyArmR
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 237
+        width: 62
+        height: 106
+      alignment: 9
+      pivot: {x: 0.61209893, y: 0.7986957}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4461c86ddf06419478fa9e9ea14cd5bd
+      internalID: 964973392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkeyPawL
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 242
+        width: 65
+        height: 94
+      alignment: 9
+      pivot: {x: 0.45247802, y: 0.7546737}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c96fe5372677ed74d9273de6bf2f6a71
+      internalID: 1609090516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkeyPawR
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 241
+        width: 60
+        height: 103
+      alignment: 9
+      pivot: {x: 0.44851786, y: 0.7774054}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67f95dac29025ac4582f4fc25b5073de
+      internalID: -1042104944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkeyBody
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 101
+        width: 204
+        height: 240
+      alignment: 9
+      pivot: {x: 0.5058983, y: 0.79051346}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fd00276c9863a745a02cc39fc19df16
+      internalID: 1471615062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkeyTail
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 15
+        width: 133
+        height: 161
+      alignment: 9
+      pivot: {x: 0.8774094, y: 0.111482896}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c306836fe047664d8a94ac512ebb51d
+      internalID: -413399359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VowelsIcons
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 88
+        width: 324
+        height: 123
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe5c42eb7847161408b389c01902dad0
+      internalID: -811092011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CategoryBg
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 47
+        width: 108
+        height: 295
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f309461413781b44496623c9822793e5
+      internalID: 1198551198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New Menu Items_0
+      rect:
+        serializedVersion: 2
+        x: 1336
+        y: 41
+        width: 250
+        height: 247
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -66, y: 123.5}
+        - {x: -125, y: 85.5}
+        - {x: -122, y: -104.5}
+        - {x: -111, y: -119.5}
+        - {x: 85, y: -120.5}
+        - {x: 125, y: -90.5}
+        - {x: 125, y: 51.5}
+        - {x: 88, y: 122.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc5f7c5b56556b746b18ecc64c37cd97
+      internalID: -1797163021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      BearHead: -1677417385
+      BunnyHead: 84346177
+      New Menu Items_16: -1125003845
+      New Menu Items_0: -1797163021
+      BearPawBL: 216209795
+      DuckWing: -2088829203
+      BunnyTail: 1357179120
+      New Menu Items_13: 1339284606
+      New Menu Items_23: -1077281698
+      DuckHead: 1047647237
+      MonkeyArmL: 1462333697
+      MonkeyPawR: -1042104944
+      New Menu Items_57: 2063238985
+      New Menu Items_8: -1598555212
+      BunnyPawBR: -302120774
+      Cartel: 1971887258
+      New Menu Items_52: 935315834
+      MonkeyHead: 524494294
+      MonkeyArmR: 964973392
+      BunnyEarR: 587228436
+      ColorIcons: 1500072242
+      New Menu Items_22: 1066187418
+      BearPawFR: -534603413
+      BearPawFL: -2120211238
+      NumberIcons: -249143433
+      MonkeyPawL: 1609090516
+      New Menu Items_18: -2049431030
+      CategoryBg: 1198551198
+      New Menu Items_24: -1974262788
+      BearBody: -441105213
+      HandClosed: -1614920694
+      BunnyPawFR: 1508130790
+      DuckBody: 1179786627
+      CartelRope: -763923102
+      New Menu Items_28: -324110006
+      New Menu Items_17: 936786943
+      New Menu Items_14: -1334595944
+      ShapesIcons: -1259821212
+      HandOpen: -572696784
+      MonkeyTail: -413399359
+      VowelsIcons: -811092011
+      New Menu Items_6: -1239216768
+      BunnyBody: 431609303
+      New Menu Items_25: -119242392
+      BunnyPawFL: 1818941024
+      DuckTail: -83742596
+      New Menu Items_53: -8465036
+      BunnyPawBL: 1417518331
+      BunnyEarL: 1777744774
+      New Menu Items_55: -1030887276
+      New Menu Items_7: 1836344757
+      New Menu Items_11: 1091639092
+      New Menu Items_26: -2139203231
+      Rope: -1520213020
+      New Menu Items_9: -253683336
+      BearTail: 1609694377
+      MonkeyBody: 1471615062
+      New Menu Items_19: -699451917
+      DuckPaw: -771932771
+      New Menu Items_27: -683170687
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
