@@ -21,7 +21,7 @@ public class SoupGame : MonoBehaviour
     [SerializeField] private List<VowelSoup> tempVowels;
     [Header("Audio")]    
     [SerializeField] private AudioClip pop;
-    [SerializeField] private AudioClip[] tutorialVoice;
+    //[SerializeField] private AudioClip[] tutorialVoice;
     [Header("Game State")]
     [Range(0, 8)]
     [SerializeField] private int vowelsQuantity;
@@ -155,23 +155,8 @@ public class SoupGame : MonoBehaviour
             //pot.GetComponent<RectTransform>().DOAnchorPosX(potInitialPos.x, 1f).OnComplete(() => VowelsScaleUp());
         }
 
-    }
-    void TableOut()
-    {
-        //table.GetComponent<RectTransform>().DOAnchorPosX(-950, 1f).OnComplete(()=> TableIn());
-    }
-    void TableIn()
-    {
-        if (!winCondition)
-        {
-            //table.GetComponent<RectTransform>().DOAnchorPosX(tableInitialPos.x, 1f);
-        }
-    }
-    IEnumerator PlayVoice(AudioClip audio, float delay)
-    {
-        yield return new WaitForSeconds(delay);
-        AudioManager.audioManager.PlayOneShotVoice(audio);   
-    }    
+    }   
+        
     
     void HighlightsVowelSprite()
     {

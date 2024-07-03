@@ -50,8 +50,8 @@ public class ColorMachine : MonoBehaviour
     [SerializeField] private AudioClip greenName;
     [SerializeField] private AudioClip orangeName;
     [SerializeField] private AudioClip purpleName;
-    [SerializeField] private AudioClip[] tutorials;
-    [SerializeField] private AudioClip[] finalVoices;
+    //[SerializeField] private AudioClip[] tutorials;
+    //[SerializeField] private AudioClip[] finalVoices;
     [SerializeField] private AudioClip selectedColorName;
     [SerializeField] private AudioClip pop;
 
@@ -176,7 +176,7 @@ public class ColorMachine : MonoBehaviour
         MoveObject(baseBall2.gameObject.transform, finalPos2);
         MoveObject(ballSprite.gameObject.transform, finalPosBall);
 
-        StartCoroutine(PlayCreatedColorTutorial());
+        //StartCoroutine(PlayCreatedColorTutorial());
 
     }
     public IEnumerator PlayCreatedColorName()
@@ -193,7 +193,7 @@ public class ColorMachine : MonoBehaviour
         Invoke(nameof(ShowWinScreen), 2.5f);
 
     }
-    public IEnumerator PlayCreatedColorTutorial()
+    /*public IEnumerator PlayCreatedColorTutorial()
     {
         //Combinar        
         AudioManager.audioManager.PlayOneShotVoice(finalVoices[0]);
@@ -226,7 +226,7 @@ public class ColorMachine : MonoBehaviour
         yield return new WaitForSeconds(selectedColorName.length);
         AudioManager.audioManager.PlayOneShotAS(AudioManager.audioManager.winSFX);
         Invoke(nameof(ShowWinScreen), 0.5f);
-    }
+    }*/
     IEnumerator PlayVoice(AudioClip audio, float delay)
     {
         yield return new WaitForSeconds(delay);

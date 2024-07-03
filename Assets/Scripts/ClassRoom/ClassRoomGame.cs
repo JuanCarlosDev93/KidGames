@@ -13,16 +13,16 @@ public class ClassRoomGame : MonoBehaviour
     [SerializeField] private RectTransform board;
     [SerializeField] private RectTransform leftPanel;
     [SerializeField] private RectTransform table;
-    [SerializeField] private CanvasGroup tutorialScreen;
+    //[SerializeField] private CanvasGroup tutorialScreen;
     [SerializeField] private CanvasGroup winScreen;
 
     [SerializeField] private Button btnCircle;
     [SerializeField] private Button btnTriangle;
     [SerializeField] private Button btnSquare;
 
-    [SerializeField] private GameObject tutCircle;
-    [SerializeField] private GameObject tutTriangle;
-    [SerializeField] private GameObject tutSquare;
+    //[SerializeField] private GameObject tutCircle;
+    //[SerializeField] private GameObject tutTriangle;
+    //[SerializeField] private GameObject tutSquare;
     
     [SerializeField] private ClassRoomShape[] shapesList;
 
@@ -36,7 +36,7 @@ public class ClassRoomGame : MonoBehaviour
     [SerializeField] private AudioClip circleName;
     [SerializeField] private AudioClip squareName;
     [SerializeField] private AudioClip triangleName;
-    [SerializeField] private AudioClip[] voices;
+    //[SerializeField] private AudioClip[] voices;
 
     
     public bool cancelActions = true;
@@ -91,17 +91,17 @@ public class ClassRoomGame : MonoBehaviour
         //shapeToEnable.GetComponent<CanvasGroup>().DOFade(3, 1f).OnComplete(()=> ActiveTutorial());
         shapeToEnable.GetComponent<CanvasGroup>().DOFade(3, 1f).OnComplete(()=> StartCoroutine(CloseTutorial()));
     }
-    public void ActiveTutorial()
+    /*public void ActiveTutorial()
     {
         tutorialScreen.gameObject.SetActive(true);
         tutorialScreen.DOFade(1,1f).OnComplete(()=> StartCoroutine(DelayedTutorial()));     
-    }
-    IEnumerator DelayedTutorial()
+    }*/
+    /*IEnumerator DelayedTutorial()
     {
         AudioManager.audioManager.PlayOneShotVoice(voices[4]);       
         yield return new WaitForSeconds(voices[4].length);
         tutorialScreen.DOFade(0, 1f).OnComplete(()=> StartCoroutine(CloseTutorial()));
-    }
+    }*/
     IEnumerator CloseTutorial()
     {
         //tutCircle.SetActive(false);

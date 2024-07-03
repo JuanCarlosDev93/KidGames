@@ -180,6 +180,12 @@ public class AudioManager : MonoBehaviour
         audioSource.clip = audioClip;
         audioSource.Play();
     }
+    public void PlayAudioPitch(AudioClip audioClip, AudioSource audioSource, float pitch)
+    {
+        audioSource.clip = audioClip;
+        audioSource.pitch = pitch;
+        audioSource.Play();
+    }
     public IEnumerator PlayAudioWithEvent(AudioClip audioClip, bool useVoiceAS,float initialDelay, FinalEvent FinalAudioEvnt)
     {
         yield return new WaitForSeconds(initialDelay);

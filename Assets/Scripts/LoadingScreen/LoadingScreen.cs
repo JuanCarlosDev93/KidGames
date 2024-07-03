@@ -96,12 +96,13 @@ public class LoadingScreen : MonoBehaviour
             {
                 animator.SetTrigger("Hide");
                 didTriggerFadeOutAnimation = true;
-
                 //Unblock user input
                 bg.blocksRaycasts = false;
-                LoadingScreenAd.instance.ResetScreen();
+                if (LoadingScreenAd.instance.adScreenOpened)
+                {
+                    LoadingScreenAd.instance.ResetScreen();
+                }
             }
-
             else
             {
                 timeElapsed += Time.deltaTime;

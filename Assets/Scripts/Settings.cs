@@ -14,14 +14,15 @@ public class Settings : MonoBehaviour
     {
         instance = this;
         DontDestroyOnLoad(gameObject);
-        Screen.sleepTimeout = SleepTimeout.NeverSleep;        
-        LoadData();
+        Screen.sleepTimeout = SleepTimeout.NeverSleep;
+        SetFrameRate();
+        //LoadData();
     }
 
     void SetFrameRate()
     {
         Application.targetFrameRate = frameRate;
-    }    
+    }
 
     public void SaveData()
     {

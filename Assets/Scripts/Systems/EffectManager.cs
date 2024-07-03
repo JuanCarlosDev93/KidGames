@@ -17,6 +17,7 @@ public class EffectManager : MonoBehaviour
     [SerializeField] private ParticleSystem stars;
     [SerializeField] private ParticleSystem hearts;
     [SerializeField] private ParticleSystem bubbleExplode;
+    [SerializeField] private ParticleSystem custom;
 
 
     [HideInInspector]
@@ -47,5 +48,10 @@ public class EffectManager : MonoBehaviour
                 bubbleExplode.Play();
                 break;
         }
+    }
+    public void PlayCustomEffect(ParticleSystem customEffect, Transform vfxPos)
+    {
+        customEffect.transform.position = vfxPos.position;
+        customEffect.Play();        
     }
 }

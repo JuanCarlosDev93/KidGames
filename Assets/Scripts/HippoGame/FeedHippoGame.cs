@@ -9,7 +9,7 @@ public class FeedHippoGame : MonoBehaviour
 {
     [Header("Main Objects")]
     [SerializeField] private GameObject winScreen;
-    [SerializeField] private GameObject tutScreen;
+    //[SerializeField] private GameObject tutScreen;
     [SerializeField] private GameObject hippo;
     [SerializeField] private GameObject globe;
     [SerializeField] private Text globeText;
@@ -21,7 +21,7 @@ public class FeedHippoGame : MonoBehaviour
 
     [Header("Audio")]    
     [SerializeField] private AudioClip pop;
-    [SerializeField] private AudioClip[] tutorialVoice;
+    //[SerializeField] private AudioClip[] tutorialVoice;
 
     [Header("Game States")]
     public bool cancelActions = false;
@@ -76,14 +76,6 @@ public class FeedHippoGame : MonoBehaviour
         restartBtn.interactable = true;
 
     }
-    IEnumerator PlayTutScreen(float delay)
-    {
-        yield return new WaitForSeconds(delay);
-        //tutScreen.FadeCG(1);
-        tutScreen.SetActive(true);
-        tutScreen.GetComponent<TutorialScreenNew>().OpenTutorial();
-    }
-
     public void ActiveActions()
     {
         cancelActions = false;
@@ -91,27 +83,5 @@ public class FeedHippoGame : MonoBehaviour
     public void RestartGame()
     {
         LoadingScreen.Instance.Show(SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().name));
-
-        //effects.clip = pop;
-        //effects.Play();
-        //foreach (Food food in foodBalls)
-        //{
-        //    food.selected = false;
-        //    food.canScaleBox = true;
-        //    food.isDragged = false;
-        //    food.resetPos = true;
-        //    food.SetInitialPos();
-        //    food.SetInitialScale();            
-        //    food.GetComponent<Collider2D>().enabled = true;
-        //    food.gameObject.SetActive(true);            
-        //
-        //}
-        //foodBallIndex = 0;
-        //hippo.GetComponent<Hippo>().SetHippoInitial();
-        //InitializeGame();        
-        //winScreen.GetComponent<CanvasGroup>().DOFade(0, 1).OnComplete(()=> winScreen.SetActive(false));
-        //cancelActions = false;
-        //hippo.GetComponent<Hippo>().raycastBlocker.SetActive(false);
-        //StartCoroutine(PlayVoice(tutorialVoice[0], 1f));
     }
 }

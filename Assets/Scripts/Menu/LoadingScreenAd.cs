@@ -16,7 +16,7 @@ public class LoadingScreenAd : MonoBehaviour
     private float timer;
     [SerializeField] private int seconds;
     [SerializeField] private bool startTimer;
-    [SerializeField] private UnityEvent onCompleteTimer;
+    public bool adScreenOpened;
     
     private void Start()
     {
@@ -26,11 +26,16 @@ public class LoadingScreenAd : MonoBehaviour
         timer = adDelayTime;
         text.text = "Anuncio en:  " + timer.ToString();
     }
+    private void Update()
+    {
+        BannerTimer();
+    }
     public void Intro()
     {
         gameObject.SetActive(true);
         bg.blocksRaycasts = true;
-        bg.DOFade(1,1f).OnComplete(()=> ShowBannerText());
+        //bg.DOFade(1,1f).OnComplete(()=> ShowBannerText());
+        bg.DOFade(1,1f).OnComplete(()=> startTimer = true);
     }
     void ShowBannerText()
     {
@@ -44,27 +49,23 @@ public class LoadingScreenAd : MonoBehaviour
             {
                 timer -= Time.deltaTime;
                 seconds = (int)(timer % 60);
-                text.text = "Anuncio en:  " + seconds.ToString();
+                //text.text = "Anuncio en:  " + seconds.ToString();
             }
             else
             {
                 startTimer = false;
                 bg.blocksRaycasts = false;
-                bannerText.anchoredPosition = bannerInitPos;
+                //bannerText.anchoredPosition = bannerInitPos;
+                adScreenOpened = true;
                 AdmobAds.admobAds.ShowInterstitialDirectly();
-                //onCompleteTimer?.Invoke();
             }
             
         }
         
-    }
-    private void Update()
-    {
-        BannerTimer();        
-    }
-
+    } 
     public void ResetScreen()
     {
+        adScreenOpened = false;
         gameObject.SetActive(false);
         bg.alpha = 0;
         seconds = 0;

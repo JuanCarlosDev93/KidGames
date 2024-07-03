@@ -17,6 +17,7 @@ public class ButtonRateMe : MonoBehaviour
     }
     public void OnClicRateMe()
     {
+        Debug.Log("Clicked review button");
         //Application.OpenURL(appUrl);
         StartCoroutine(RequestRate());
     }

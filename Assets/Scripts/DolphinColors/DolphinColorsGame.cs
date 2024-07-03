@@ -11,13 +11,13 @@ public class DolphinColorsGame : MonoBehaviour
     [SerializeField] private int globesCounter;
     [SerializeField] private GlobeSpawner spawner;
     [SerializeField] private PlayableDirector dolphinPlayable;
-    [Header("Audio")]
-    [SerializeField] private AudioClip[] tutorialVoice;
+    //[Header("Audio")]
+    //[SerializeField] private AudioClip[] tutorialVoice;
 
     public void StartTutorial()
     {
         StartGame();
-        AudioManager.audioManager.PlayOneShotVoice(tutorialVoice[3]);
+        //AudioManager.audioManager.PlayOneShotVoice(tutorialVoice[3]);
         gameManager.ShowTutorial();
     }
     public void StartGame()

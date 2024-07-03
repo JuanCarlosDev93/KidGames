@@ -39,39 +39,24 @@ public class AdmobAds : MonoBehaviour
     {
         admobAds = this;
         DontDestroyOnLoad(this.gameObject);
-
+        delayCount = delay;
         // Initialize the Google Mobile Ads SDK.
         if (Application.internetReachability == NetworkReachability.NotReachable)
         {
             noAds = true;
             return;
         }
-        MobileAds.Initialize(initStatus => { });
-        LoadInterstitialAd();
-        delayCount = delay;
-    }
-    private static string NameFromIndex(int BuildIndex)
-    {
-        string path = SceneUtility.GetScenePathByBuildIndex(BuildIndex);
-        int slash = path.LastIndexOf('/');
-        string name = path.Substring(slash + 1);
-        int dot = name.LastIndexOf('.');
-        return name.Substring(0, dot);
-    }
-    private int SceneIndexFromName(string sceneName)
-    {
-        for (int i = 0; i < SceneManager.sceneCountInBuildSettings; i++)
+        // Initialize the Google Mobile Ads SDK.
+        MobileAds.Initialize((InitializationStatus initStatus) =>
         {
-            string testedScreen = NameFromIndex(i);
-            //print("sceneIndexFromName: i: " + i + " sceneName = " + testedScreen);
-            if (testedScreen == sceneName)
-                return i;
-        }
-        return -1;
+            // This callback is called once the MobileAds SDK is initialized.
+            LoadInterstitialAd();
+        });
+        
     }
+    
     private void LoadInterstitialAd()
     {
-
         if(interstitial != null)
         {
             DestroyAd();
@@ -99,6 +84,7 @@ public class AdmobAds : MonoBehaviour
             if (error != null)
             {
                 Debug.LogError("Interstitial ad failed to load an ad with error : " + error);
+                LoadingScreen.Instance.Show(SceneManager.LoadSceneAsync(sceneToTransition));
                 return;
             }
             // If the operation failed for unknown reasons.
@@ -106,6 +92,7 @@ public class AdmobAds : MonoBehaviour
             if (ad == null)
             {
                 Debug.LogError("Unexpected error: Interstitial load event fired with null ad and null error.");
+                LoadingScreen.Instance.Show(SceneManager.LoadSceneAsync(sceneToTransition));
                 return;
             }
 
@@ -140,7 +127,6 @@ public class AdmobAds : MonoBehaviour
                     {
                         interAdLoaded = true;
                         LoadingScreenAd.instance.Intro();
-                        //interstitial.Show();
                     }
                     else
                     {
@@ -154,7 +140,6 @@ public class AdmobAds : MonoBehaviour
             LoadingScreen.Instance.Show(SceneManager.LoadSceneAsync(sceneToTransition));
         }
     }
-        
     public void ShowInterstitialDelayedPlaylist()
     {
         if (!noAds)
@@ -191,39 +176,30 @@ public class AdmobAds : MonoBehaviour
     {
         if (interstitial != null && interstitial.CanShowAd())
         {
-            Debug.Log("Showing interstitial ad.");
             interstitial.Show();
+            Debug.Log("Showing interstitial ad.");
         }
         else
         {
+            LoadingScreen.Instance.Show(SceneManager.LoadSceneAsync(sceneToTransition));
             Debug.LogError("Interstitial ad is not ready yet.");
         }
-    }
-
-    public void HandleOnAdClosed(object sender, EventArgs args)
-    {
-        LoadInterstitialAd();
-        //LoadingScreenAd.instance.ResetScreen();
-        LoadingScreen.Instance.Show(SceneManager.LoadSceneAsync(sceneToTransition));
-        MonoBehaviour.print("HandleAdClosed event received");
-    }    
+    }       
 
     public void DestroyAd()
     {
         if (interstitial != null)
         {
-            Debug.Log("Destroying interstitial ad.");
             interstitial.Destroy();
             interstitial = null;
+            Debug.Log("Destroying interstitial ad.");
+            
         }
 
         // Inform the UI that the ad is not ready.
         //AdLoadedStatus?.SetActive(false);
     }
-
-    /// <summary>
-    /// Logs the ResponseInfo.
-    /// </summary>
+    
     public void LogResponseInfo()
     {
         if (interstitial != null)
@@ -260,9 +236,9 @@ public class AdmobAds : MonoBehaviour
         // Raised when the ad closed full screen content.
         ad.OnAdFullScreenContentClosed += () =>
         {
-            Debug.Log("Interstitial ad full screen content closed.");
             LoadInterstitialAd();
             LoadingScreen.Instance.Show(SceneManager.LoadSceneAsync(sceneToTransition));
+            Debug.Log("Interstitial ad full screen content closed.");            
 
         };
         // Raised when the ad failed to open full screen content.
@@ -271,7 +247,27 @@ public class AdmobAds : MonoBehaviour
             Debug.LogError("Interstitial ad failed to open full screen content with error : "
                 + error);
             LoadInterstitialAd();
+            LoadingScreen.Instance.Show(SceneManager.LoadSceneAsync(sceneToTransition));
         };
+    }
+    private static string NameFromIndex(int BuildIndex)
+    {
+        string path = SceneUtility.GetScenePathByBuildIndex(BuildIndex);
+        int slash = path.LastIndexOf('/');
+        string name = path.Substring(slash + 1);
+        int dot = name.LastIndexOf('.');
+        return name.Substring(0, dot);
+    }
+    private int SceneIndexFromName(string sceneName)
+    {
+        for (int i = 0; i < SceneManager.sceneCountInBuildSettings; i++)
+        {
+            string testedScreen = NameFromIndex(i);
+            //print("sceneIndexFromName: i: " + i + " sceneName = " + testedScreen);
+            if (testedScreen == sceneName)
+                return i;
+        }
+        return -1;
     }
 
 }

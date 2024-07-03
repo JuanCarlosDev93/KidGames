@@ -12,7 +12,7 @@ public class PlaylistGames : MonoBehaviour
     private float timer;
     [SerializeField] int totalTime;
     public bool startTimer;
-    //[SerializeField] private bool useInterAd;
+    [SerializeField] private bool useInterAd;
 
 
     private void Start()
@@ -47,7 +47,6 @@ public class PlaylistGames : MonoBehaviour
                 startTimer = false;
                 timer = 0;
                 timerTxt.text = "0";
-                //LoadingScreen.Instance.Show(SceneManager.LoadSceneAsync(NextScene()));
                 LoadScene();
             }
 
@@ -80,9 +79,12 @@ public class PlaylistGames : MonoBehaviour
         {
             AdmobAds.admobAds.sceneToTransition = NameFromIndex(NextScene());
             AdmobAds.admobAds.ShowInterstitialDelayed();
-            return;
         }
-        LoadingScreen.Instance.Show(SceneManager.LoadSceneAsync(NextScene()));
+        else
+        {
+            LoadingScreen.Instance.Show(SceneManager.LoadSceneAsync(NextScene()));
+
+        }
 
     }
     public void StartTimer()

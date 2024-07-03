@@ -25,6 +25,8 @@ public class DrawNumbers : MonoBehaviour
     public int elementsQuantity;
     public int elementsCounter;
     public bool activeHand;
+    [SerializeField] private bool voiceInNextElement = false;
+    [SerializeField] private bool introVoice = false;
 
     [Header("Audio")]    
     public AudioClip swooshAC;
@@ -43,7 +45,10 @@ public class DrawNumbers : MonoBehaviour
 
         //StartCoroutine(PlayTutorial(1));
         Invoke(nameof(IntroAnim), 1f);
-        StartCoroutine(PlayElementName(1));
+        if (introVoice)
+        {
+            StartCoroutine(PlayElementName(1));
+        }
     }
     public void NextElement()
     {
@@ -96,7 +101,11 @@ public class DrawNumbers : MonoBehaviour
     }
     private void ElementPunchScale()
     {
-        AudioManager.audioManager.PlayAudio(boingAC, AudioManager.audioManager.effectsAS);        
+        AudioManager.audioManager.PlayAudio(boingAC, AudioManager.audioManager.effectsAS);
+        if (voiceInNextElement)
+        {
+            AudioManager.audioManager.PlayOneShotVoice(elementNames[elementsCounter]);
+        }
         elementsDraw[elementsCounter].transform.DOPunchScale(new Vector2(0.3f, 0.3f), 0.5f, 2).OnComplete(() => InitElement());
     }
     void InitElement()
