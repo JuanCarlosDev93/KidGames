@@ -2,22 +2,31 @@
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+using UnityEngine.UI;
 
 public class Food : MonoBehaviour
 {
     [SerializeField] private FeedHippoGame feedHippoGame = default;
+
     [SerializeField] private GameObject box = default;
     [SerializeField] private GameObject globe = default;
+
     [SerializeField] private Transform tempPos;
     [SerializeField] private Transform foodBallsTrans;
+
+    public Text TextUI;
+
     public bool selected = false;
     public bool canScaleBox = true;
     public bool resetPos = true;
     public bool isDragged = false;
+
     private Vector2 initialPos;
     private Vector3 initialScale;
     [SerializeField] Vector3 scale;
-    [SerializeField] float scaleSpeed;    
+
+    [SerializeField] float scaleSpeed; 
+    
     [SerializeField] private AudioClip swoosh;
     [SerializeField] private AudioClip numberSound;
 

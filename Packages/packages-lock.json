@@ -1,7 +1,60 @@
 {
   "dependencies": {
+    "com.google.ads.mobile": {
+      "version": "9.2.0",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.google.external-dependency-manager": "1.2.181",
+        "com.unity.modules.androidjni": "1.0.0"
+      },
+      "url": "https://package.openupm.com"
+    },
+    "com.google.android.appbundle": {
+      "version": "1.8.0",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://package.openupm.com"
+    },
+    "com.google.external-dependency-manager": {
+      "version": "1.2.181",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://package.openupm.com"
+    },
+    "com.google.play.common": {
+      "version": "1.8.1",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.google.android.appbundle": "1.8.0"
+      },
+      "url": "https://package.openupm.com"
+    },
+    "com.google.play.core": {
+      "version": "1.8.1",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.google.android.appbundle": "1.8.0",
+        "com.google.external-dependency-manager": "1.2.172"
+      },
+      "url": "https://package.openupm.com"
+    },
+    "com.google.play.review": {
+      "version": "1.8.1",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.google.play.common": "1.8.1",
+        "com.google.play.core": "1.8.1"
+      },
+      "url": "https://package.openupm.com"
+    },
     "com.unity.2d.animation": {
-      "version": "9.1.0",
+      "version": "9.1.1",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -14,7 +67,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.2d.common": {
-      "version": "8.0.2",
+      "version": "8.0.3",
       "depth": 1,
       "source": "registry",
       "dependencies": {
@@ -32,6 +85,17 @@
       "source": "builtin",
       "dependencies": {}
     },
+    "com.unity.2d.spriteshape": {
+      "version": "9.0.4",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.mathematics": "1.1.0",
+        "com.unity.2d.common": "8.0.3",
+        "com.unity.modules.physics2d": "1.0.0"
+      },
+      "url": "https://packages.unity.com"
+    },
     "com.unity.ai.navigation": {
       "version": "1.1.5",
       "depth": 0,
@@ -42,7 +106,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.burst": {
-      "version": "1.8.12",
+      "version": "1.8.17",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -92,14 +156,14 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.mobile.android-logcat": {
-      "version": "1.4.0",
+      "version": "1.4.2",
       "depth": 0,
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
     "com.unity.recorder": {
-      "version": "4.0.2",
+      "version": "4.0.3",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -107,19 +171,37 @@
       },
       "url": "https://packages.unity.com"
     },
+    "com.unity.settings-manager": {
+      "version": "2.0.1",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.splines": {
+      "version": "2.6.1",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.settings-manager": "1.0.3",
+        "com.unity.mathematics": "1.2.1",
+        "com.unity.ugui": "1.0.0"
+      },
+      "url": "https://packages.unity.com"
+    },
     "com.unity.sysroot": {
-      "version": "2.0.5",
+      "version": "2.0.10",
       "depth": 1,
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
     "com.unity.sysroot.linux-x86_64": {
-      "version": "2.0.4",
+      "version": "2.0.9",
       "depth": 1,
       "source": "registry",
       "dependencies": {
-        "com.unity.sysroot": "2.0.5"
+        "com.unity.sysroot": "2.0.10"
       },
       "url": "https://packages.unity.com"
     },
@@ -135,7 +217,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.textmeshpro": {
-      "version": "3.0.6",
+      "version": "3.0.9",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -156,12 +238,12 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.toolchain.win-x86_64-linux-x86_64": {
-      "version": "2.0.4",
+      "version": "2.0.9",
       "depth": 0,
       "source": "registry",
       "dependencies": {
-        "com.unity.sysroot": "2.0.5",
-        "com.unity.sysroot.linux-x86_64": "2.0.4"
+        "com.unity.sysroot": "2.0.10",
+        "com.unity.sysroot.linux-x86_64": "2.0.9"
       },
       "url": "https://packages.unity.com"
     },

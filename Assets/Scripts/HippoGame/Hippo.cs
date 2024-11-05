@@ -49,7 +49,7 @@ public class Hippo : MonoBehaviour
         else
         {
             other.GetComponent<Collider2D>().enabled = false;
-            AudioManager.audioManager.PlayOneShotVoice(incorrect);
+            AudioManager.audioManager.PlayEffect(AudioEffectType.incorrect);
             Debug.Log("Incorrect: " + other.gameObject.name);
         }
     }

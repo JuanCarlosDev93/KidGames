@@ -16,28 +16,40 @@ public class ColorMachine : MonoBehaviour
 {
     [Header("Main Objects")]
     [SerializeField] private GameObject winScreen;
+
     [SerializeField] private PlaylistGames playlist;
+
     [SerializeField] private Faucet faucet;
+
     [SerializeField] private ParticleSystem colorBallVFX = default;
+
     [SerializeField] private Transform panel;
+
     [SerializeField] private Mold mold;
+
     [SerializeField] private Button restartBtn;
+
     [SerializeField] private Transform moldUp;
     [SerializeField] private Transform moldDown;
     [SerializeField] private Transform backLight;
+
     [SerializeField] private Image background;
+
     [SerializeField] private SpriteRenderer ballSprite;
     [SerializeField] private SpriteRenderer baseBall1;
     [SerializeField] private SpriteRenderer baseBall2;
     [SerializeField] private SpriteRenderer plus;
     [SerializeField] private SpriteRenderer equal;
+
     [SerializeField] private Transform initialPos1;
     [SerializeField] private Transform initialPos2;
     [SerializeField] private Transform finalPosBall;
     [SerializeField] private Transform finalPos1;
     [SerializeField] private Transform finalPos2;
+
      private Vector3 moldUpInitialPos;
      private Vector3 moldDownInitialPos;
+
     [SerializeField] private ColorButton[] colorButtons;
 
     [Header("Final Colors")]
@@ -61,8 +73,10 @@ public class ColorMachine : MonoBehaviour
     public Color32 baseColor1;
     public Color32 baseColor2;
     Color tempColor = Color.white;
+
     public AudioClip firstColorAudio;
     public AudioClip secondColorAudio;
+
     public bool cancelActions = false;
     bool firstColor = false;
 

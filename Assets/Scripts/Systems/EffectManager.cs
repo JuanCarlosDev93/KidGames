@@ -54,4 +54,9 @@ public class EffectManager : MonoBehaviour
         customEffect.transform.position = vfxPos.position;
         customEffect.Play();        
     }
+    public void PlayCustomEffectPos(ParticleSystem customEffect, Vector3 vfxPos)
+    {
+        customEffect.transform.position = vfxPos;
+        customEffect.Play();
+    }
 }

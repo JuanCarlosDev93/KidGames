@@ -120,11 +120,11 @@ if (Input.touchCount > 0)
     }
     public void RemoveParent()
     {
-        transform.parent = null;
+        transform.SetParent(null);
     }
     public void RestoreParent()
     {
-        transform.parent = initialParent;
+        transform.SetParent(initialParent);
     }
     public void SetInitialPos()
     {

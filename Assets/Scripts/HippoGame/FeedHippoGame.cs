@@ -24,6 +24,7 @@ public class FeedHippoGame : MonoBehaviour
     //[SerializeField] private AudioClip[] tutorialVoice;
 
     [Header("Game States")]
+    [SerializeField] private bool useVowels; 
     public bool cancelActions = false;
 
     private void Start()
@@ -36,7 +37,14 @@ public class FeedHippoGame : MonoBehaviour
 
     void InitializeGame()
     {
-        globeText.text = (foodBallIndex + 1).ToString();
+        if (!useVowels)
+        {
+            globeText.text = (foodBallIndex + 1).ToString();            
+        }
+        else
+        {
+            globeText.text = foodBalls[foodBallIndex].TextUI.text;
+        }
         foodBalls[foodBallIndex].gameObject.SetActive(true);
         foodBalls[foodBallIndex].selected = true;
     }
@@ -44,8 +52,16 @@ public class FeedHippoGame : MonoBehaviour
     void NextFoodBall()
     {
         foodBallIndex++;
-        globeText.text = (foodBallIndex + 1).ToString();
+        if (!useVowels)
+        {            
+            globeText.text = (foodBallIndex + 1).ToString();            
+        }
+        else
+        {
+            globeText.text = foodBalls[foodBallIndex].TextUI.text;
+        }
         foodBalls[foodBallIndex].selected = true;
+
     }
     
     public void CheckAllFood()

@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class ButtonRateMe : MonoBehaviour
 {
+    
     // Create instance of ReviewManager
     private ReviewManager _reviewManager;
 
@@ -46,4 +47,5 @@ public class ButtonRateMe : MonoBehaviour
         // reviewed or not, or even whether the review dialog was shown. Thus, no
         // matter the result, we continue our app flow.
     }
+    
 }
